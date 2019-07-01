@@ -1,7 +1,7 @@
 package classesDeJogo;
 public enum Arma {
 
-	CACETETE(15, 33), ESPADA(25, 55), PISTOLA(30, 40), FUZIL(40, 65);
+	CACETETE(15, 30), SOCOINGLES(10, 35), PISTOLA(35, 50), METRALHADORA(40, 60);
 
 	public int bonus;
 	public int bonusEspecial;

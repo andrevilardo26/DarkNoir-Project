@@ -1,4 +1,5 @@
 package classesDeJogo;
+import java.util.Random;
 
 import java.util.NoSuchElementException;
 import java.util.Random;
@@ -19,7 +20,7 @@ public class Personagem {
 	private int provocacao;
 	
 	
-	private String semItem = "VOCÊ NÃO POSSUI ESSE ITEM \n";
+	private String semItem = "VOCÃŠ NÃƒO POSSUI ESSE ITEM \n";
 
 	Personagem(String nome, int quantItens) {
 		this.nome = nome;
@@ -100,19 +101,19 @@ public class Personagem {
 
 //METODOS DO JOGO.........................................................................................................
 
-//Ações .........................................
+//Aï¿½ï¿½es .........................................
 
 	public void atacar() {
 		this.energia += 15;
-		System.out.println(this.getNome() + " USOU ATAQUE \n");
+		System.out.println(this.getNome() + " FERIU SEU OPONENTE COM GOLPE NORMAL \n");
 	}
 
 	public void atacarEspecial() {
 		if (energia >= 100) {
 			this.energia -= 80;
-			System.out.println(this.getNome() + " USOU ATAQUE ESPECIAL \n");
+			System.out.println(this.getNome() + " FERIU SEU OPONENTE COM GOLPE FATAL \n");
 		} else {
-			System.out.println(this.getNome() + " ESTÁ COM ENERGIA BAIXA! ATAQUE FOI FRACO.");
+			System.out.println(this.getNome() + " ESTÃ COM ENERGIA BAIXA! ATAQUE FOI FRACO.");
 
 		}
 	}
@@ -120,7 +121,7 @@ public class Personagem {
 	public void serProvocado(int valor) {
 		this.provocacao = valor;
 		this.energia -= provocacao;
-		System.out.println(this.getNome() + " FOI PROVOCADO \n");
+			System.out.println(this.getNome() + " FOI XINGADO \n");
 	}
 
 	public void usarCura(Personagem jogador, int valor) {
@@ -146,7 +147,7 @@ public class Personagem {
 		}
 	}
 
-//Situações.........................................
+//Situaï¿½ï¿½es.........................................
 
 	public void tomarDano(int valor) {
 		this.vida -= valor;
@@ -176,7 +177,7 @@ public class Personagem {
 			Scanner selector = new Scanner(System.in);
 			int  valor = selector.nextInt()-1;
 			if(valor>itens.length-1  || valor<0) {
-				System.out.println("ESCOLHA INVÁLIDA. DIGITE UM VALOR VÁLIDO");
+				System.out.println("ESCOLHA INVÃLIDA. DIGITE UM VALOR VÃLIDO");
 				return ImprimirItem();
 			}
 			if(itens[valor] == null) {

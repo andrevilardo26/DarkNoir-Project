@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Batalha extends Dialogo {
 	
 	/*
-	 * Na batalha sÛ h· dois caminhos possÌveis. O caminho com indice 0 continua o jogo normalmente
+	 * Na batalha sÔøΩ hÔøΩ dois caminhos possÔøΩveis. O caminho com indice 0 continua o jogo normalmente
 	 * O caminho com indice 1 leva ao fim do jogo
 	 */
 	
@@ -16,6 +16,7 @@ public class Batalha extends Dialogo {
 		super(arquivo, valorDeOpcao);
 		this.inimigo = inimigo;
 		this.jogador = jogador;
+		
 	}
 	
 	public void executa() {
@@ -42,19 +43,20 @@ public class Batalha extends Dialogo {
 	
 	public void imprime() {
 		System.out.println("==========================================");
-		System.out.println(jogador.getNome() + ":       VIDA:" + jogador.getVida() + " / ENERGIA:" + jogador.getEnergia() + "     |");
-		System.out.println(inimigo.getNome() + ":     VIDA:" + inimigo.getVida() + " / ENERGIA:" + inimigo.getEnergia() + "     |");
+		System.out.println(jogador.getNome() + ":       VIDA:" + jogador.getVida() + " / ENERGIA:" + jogador.getEnergia() + "     ");
+		System.out.println(inimigo.getNome() + ":     VIDA:" + inimigo.getVida() + " / ENERGIA:" + inimigo.getEnergia() + "     ");
 		System.out.println("==========================================");
 		System.out.println("DIGITE: (1) ATAQUE (2) ATAQUE ESPECIAL (3) PROVOCAR  (4) USAR ITEM \n");
 	}
 	
 	public void acao(Personagem atacante, Personagem vitima, int opcao) {
 		if (opcao < 1 || opcao > 4)
-			throw new IllegalArgumentException ("OP«√O INV¡LIDA \n");
+			throw new IllegalArgumentException ("OP√á√ÉO INV√ÅLIDA \n");
 			switch(opcao) {
 			case 1:
 				atacante.atacar();
 				vitima.tomarDano(atacante.getPoderAtaque());
+				
 				break;
 			case 2:
 				atacante.atacarEspecial();
@@ -62,7 +64,7 @@ public class Batalha extends Dialogo {
 				break;
 			case 3:
 				if (vitima.getPoderAtaque() <= 0) {
-					System.out.println(" \n N√O … POSSÕVEL PROVOCAR, " + atacante.getNome() + " ERROU ! \n");
+					System.out.println(" \n N√ÉO √â POSS√çVEL PROVOCAR, " + atacante.getNome() + " ERROU ! \n");
 					break;
 				}
 					else{
@@ -73,7 +75,7 @@ public class Batalha extends Dialogo {
 				int valor = atacante.ImprimirItem();
 				if(valor>-1) {
 					if(valor == Integer.MAX_VALUE) {
-						System.out.println("N√O EXISTEM MAIS ITENS");
+						System.out.println("N√ÉO EXISTEM MAIS ITENS");
 						break;}
 					atacante.escolherItem(valor);
 				}
