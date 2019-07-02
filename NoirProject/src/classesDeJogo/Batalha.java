@@ -5,13 +5,13 @@ import java.util.Scanner;
 
 public class Batalha extends Dialogo {
 	
-	/*
-	 * Na batalha s� h� dois caminhos poss�veis. O caminho com indice 0 continua o jogo normalmente
-	 * O caminho com indice 1 leva ao fim do jogo
-	 */
-	
+	//HÁ 2 CAMINHOS POSSÍVEIS NA BATALHA, O CAMINHO COM ÍNDICE 0 CONTINUA O JOGO NORMALMENTE
+	//O CAMINHO COM ÍNDICE 1 LEVA AO FIM DO JOGO
+	 
+	//ATRIBUTOS DA CLASSE BATALHA
 	Personagem inimigo, jogador;
 	
+	//CONSTRUTOR DA BATALHA
 	Batalha(String arquivo, String valorDeOpcao, Personagem inimigo, Personagem jogador) {
 		super(arquivo, valorDeOpcao);
 		this.inimigo = inimigo;
@@ -19,6 +19,9 @@ public class Batalha extends Dialogo {
 		
 	}
 	
+	
+	
+	//EXECUÇÃO DO LOOP DE BATALHA
 	public void executa() {
 		int rodada = 1, opcao;
 		Scanner teclado = new Scanner(System.in);
@@ -36,11 +39,13 @@ public class Batalha extends Dialogo {
 			}
 		} while (!(jogador.getVida() <= 0 || inimigo.getVida() <= 0));
 		imprime();
-		//se o jogador morreu, defino o caminho como "game over"
 		if (jogador.getVida() <= 0)
 			this.caminhos.set(0, this.caminhos.get(1));
+		jogador.resetVida();
+		inimigo.resetVida();
 	}
 	
+	//IMPREÇÃO DAS BARRAS DE ATRIBUTOS DO PERSONAGEM
 	public void imprime() {
 		System.out.println("==========================================");
 		System.out.println(jogador.getNome() + ":       VIDA:" + jogador.getVida() + " / ENERGIA:" + jogador.getEnergia() + "     ");
@@ -49,6 +54,7 @@ public class Batalha extends Dialogo {
 		System.out.println("DIGITE: (1) ATAQUE (2) ATAQUE ESPECIAL (3) PROVOCAR  (4) USAR ITEM \n");
 	}
 	
+	// AÇÕES QUE PODEM SER USADAS PELO PERSONAGEM DURANTE O LOOP DE BATALHA
 	public void acao(Personagem atacante, Personagem vitima, int opcao) {
 		if (opcao < 1 || opcao > 4)
 			throw new IllegalArgumentException ("OPÇÃO INVÁLIDA \n");
