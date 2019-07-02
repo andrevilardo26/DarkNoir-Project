@@ -1,4 +1,4 @@
-==============================================================================================
+﻿==============================================================================================
  EM CASOS PASSADOS, O DETETIVE DESCOBRIU QUE AS MULHERES QUE TRABALHAVAM NA NOITE
  ERAM MUITAS VEZES AS MELHORES INFORMANTES E ESPIÃS POSSÍVEIS, POR ALGUM PREÇO É CLARO...
  A BOATE CERTEMANTE TINHA CAMERAS. SE ALGUÉM DE DENTRO CONSEGUISSE A GRAVAÇÃO DA HORA DO CRIME... 
@@ -45,20 +45,20 @@
  
       .======================================.                DETETIVE D: OLÁ MOÇA, MEU NOME É D, E O SEU?
       | ___ ___ ___               _   _   _  |
-      | \_/ \_/ \_/ C|||C|||C||| |-| |-| |-| |                TAMARA: OI, MEU NOME É TAMARA.
-      | _|_ _|_ _|_  ||| ||| ||| |_| |_| |_| |
-      '=====================================,sSSSSss          DETETIVE D: OLHA EU DEVO PERDIR DESCULPAS, MAS ESTOU UM POUCO SEM TEMPO
-                  DEPOSITO DA LAPA         ,sSSS`. .|         ENTÃO VOU SER UM POUCO DIRETO. ME DISSERAM QUE VOCÊ TRABALHA NA BOATE.
-           .:.                             SSSS@  =/ \~/      AQUELA DO ASSASSINATO. EU PRECISO DA GRAVAÇÃO DA CÂMERA NA HORA DO CRIME.
-          C|||'                            SSSSS_(_  _Y_       
-        ___|||_____________________________S/ / _)_) /.-      TAMARA: HUM, GOSTEI DE VOCÊ. UM HOMEM DIRETO. VAMOS FAZER O SEGUINTE:
+      | \_/ \_/ \_/ C|||C|||C||| |-| |-| |-| |                MULHER: OLÁ, MEU NOME É TAMARA.
+      | _|_ _|_ _|_  ||| ||| ||| |_| |_| |_| |______
+      '=====================================,/  \__,)         DETETIVE D: OLHA EU DEVO PERDIR DESCULPAS, MAS ESTOU SEM TEMPO
+                  DEPOSITO DA LAPA         ,/  /`- -|         ENTÃO VOU SER UM POUCO DIRETO. ME DISSERAM QUE VOCÊ TRABALHA NA BOATE.
+           .:.                             /   |  =/ \~/      AQUELA DO ASSASSINATO. EU PODERIA PAGAR PELA GRAVAÇÃO DA CÂMERA NA HORA DO CRIME.
+          C|||'                            |   \_(_  _Y_       
+        ___|||_____________________________|/ / _)_) /.-      TAMARA: HUM, GOSTEI DE VOCÊ. UM HOMEM DIRETO. VAMOS FAZER O SEGUINTE:
        [____________________________________| |   /\//        PAGUE A MINHA CONTA NO BAR, ME LEVE PRA CAMA COM VOCÊ E DEPOIS EU ARRANJO
         |   ____    ____    ____    ____   | \|==(\_/         A SUA GRAVAÇÃO.
         |  (____)  (____)  (____)  (____)  | (/   ;
-        |  |    |  |    |  |    |  |    |  | |____|           -------------------------------------------------------------------------
-        |  |    |  |    |  |    |  |    |  |  \  |\           SE RELACIONAR POR DINHEIRO NÃO ERA DO FEITIO DO DETETIVE, ALÉM DE SER UMA
-        |  |    |  |    |  |    |  |    |  |   ) ) )          PROPOSTA BEM INCOMUM. ELE PODERIA TOPAR... OU FAZER UMA CONTRA PROPOSTA.
-        |  |____|  |____|  |____|  |____|  |  (  |/
+        |  |    |  |    |  |    |  |    |  | |____|           ------------------------------------------------------------------------------
+        |  |    |  |    |  |    |  |    |  |  \  |\           O DETETIVE OUVIU AQUELA PROPOSTA COM ESTRANHAMENTO. SE RELACIONAR POR DINHEIRO 
+        |  |    |  |    |  |    |  |    |  |   ) ) )          NÃO ERA DO FEITIO DO DETETIVE, ALÉM DE SER UMA PROPOSTA BEM INCOMUM. 
+        |  |____|  |____|  |____|  |____|  |  (  |/           ELE PODERIA TOPAR... OU FAZER UMA CONTRA PROPOSTA.
         |  I====I  I====I  I====I  I====I  |  /\ |
         |  |    |  |    |  |    |  |    |  | /.(=\
                                                Y\_\

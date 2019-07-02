@@ -121,8 +121,17 @@ public class Personagem {
 	public void serProvocado(int valor) {
 		this.provocacao = valor;
 		this.energia -= provocacao;
+		int num = new Random().nextInt();
+		if (num < 0.3) {
 			System.out.println(this.getNome() + " FOI XINGADO \n");
-	}
+		}
+		else if (num < 0.6) {
+			System.out.println(this.getNome() + " FOI PROVOCADO \n");
+		}
+		else {
+			System.out.println(this.getNome() + " FOI HUMILHADO \n");
+		}
+		}
 
 	public void usarCura(Personagem jogador, int valor) {
 		jogador.setVida(vida + valor);

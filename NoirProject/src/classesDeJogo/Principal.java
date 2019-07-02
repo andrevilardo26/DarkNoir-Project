@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Principal {
 
 	private Dialogo corrente;
-	private Dialogo fimDeJogo = new Dialogo("src/textos/fimDeJogo.txt", "MORRER");
+	private Dialogo fimDeJogo = new Dialogo("src/textos/teste.txt", "SAIR DO JOGO");
 	private Personagem detetive, policial, misterioso, gangster;
 	private ItemConsumivel aspirina, superAspirina, adrenalina;
 
@@ -12,7 +12,8 @@ public class Principal {
 		
 		criandoObjetos();
 		
-		Dialogo introducao = new Dialogo("src/textos/introducao.txt", "");
+		Dialogo introducao = new Dialogo("src/textos/introducao.txt", "TENTAR DE NOVO \n");
+		Dialogo voceMorreu = new Dialogo("src/textos/fimDeJogo.txt", "DESISTIR");
 		Dialogo atendeuCampainha = new Dialogo("src/textos/atendeuCampainha.txt", " ATENDER A CAMPAINHA");
 		Dialogo naoAtendeu = new Dialogo("src/textos/naoAtendeu.txt", " IGNORAR E DESCANSAR");
 		Dialogo escolha0Op1 = new Dialogo("src/textos/escolha0Op1.txt", "ACEITAR CONTRATO");
@@ -21,7 +22,7 @@ public class Principal {
 		Dialogo falarGarota = new Dialogo("src/textos/falarGarota.txt", "FALAR COM GAROTA");
 		Dialogo falarPolicial = new Dialogo("src/textos/falarPolicial.txt", "FALAR COM POLICIAL");
 		Dialogo irMotel = new Dialogo("src/textos/irMotel.txt", "ACEITAR PROPOSTA");
-		Dialogo contraProposta = new Dialogo("src/textos/contraProposta.txt", "ACEITAR PROPOSTA");
+		Dialogo contraProposta = new Dialogo("src/textos/irMotel.txt", "ACEITAR PROPOSTA");
 		Dialogo enfrentarPolicial = new Dialogo("src/textos/enfrentarPolicial.txt", "BRIGAR COM POLICIAL");
 		Dialogo subornarPolicial = new Dialogo("src/textos/subornarPolicial.txt", "SUBORNAR POLICIAL");
 		Dialogo acharProva = new Dialogo("src/textos/acharProva.txt", "PEGAR PROVA DO CRIME");
@@ -30,14 +31,17 @@ public class Principal {
 		
 		this.corrente = introducao;
 		introducao.adicionarCaminho(atendeuCampainha);
-		introducao.adicionarCaminho(naoAtendeu);		
+		introducao.adicionarCaminho(naoAtendeu);	
+		
+		voceMorreu.adicionarCaminho(fimDeJogo);
+		voceMorreu.adicionarCaminho(introducao);
 			
 		atendeuCampainha.adicionarCaminho(escolha0Op1);
 		atendeuCampainha.adicionarCaminho(escolha0Op2);
 		naoAtendeu.adicionarCaminho(escolha0Op1);
 		naoAtendeu.adicionarCaminho(escolha0Op2);
 		
-		escolha0Op2.adicionarCaminho(this.fimDeJogo);
+		escolha0Op2.adicionarCaminho(voceMorreu);
 		
 		escolha0Op1.adicionarCaminho(cenaDoCrime);
 
